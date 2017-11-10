@@ -1,5 +1,6 @@
 #ifndef marine_h
 #define marine_h
+#include "pieza.h"
  class marine: public pieza{
    private:
       char type;
@@ -18,7 +19,7 @@
       void setPosx(int);
       void setPosy(int);
 
-      bool move(int, int);
+      bool move(int, int, pieza***);
       ~marine();
  };
 

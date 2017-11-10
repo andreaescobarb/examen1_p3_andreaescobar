@@ -1,6 +1,8 @@
 #ifndef general_h
 #define general_h
 
+#include "pieza.h"
+
 class general: public pieza{
   private:
      char type;
@@ -19,7 +21,7 @@ class general: public pieza{
      void setPosx(int);
      void setPosy(int);
 
-     bool move(int, int);
+     bool move(int, int, pieza***);
      //destructor
 
      ~general();

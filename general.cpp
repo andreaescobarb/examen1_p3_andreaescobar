@@ -18,11 +18,11 @@ int general::getPosy(){
   return posy;
 }
 
-void general::setPosx(){
+void general::setPosx(int pposx){
   posx = pposx;
 }
 
-void general::setPosy(){
+void general::setPosy(int pposy){
   posy = pposy;
 }
 
@@ -30,7 +30,7 @@ void general::setType(char tipo){
   type = tipo;
 }
 
-bool general::move(int x, int y){
+bool general::move(int x, int y, pieza*** tablero){
 
 }
 

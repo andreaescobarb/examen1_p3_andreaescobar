@@ -3,7 +3,7 @@
 
 class pieza{
   public:
-    virtual bool move;
+    virtual bool move(int, int);
 };
 
 #endif

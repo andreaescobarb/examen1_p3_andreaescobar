@@ -13,7 +13,7 @@ int main(int argc, char const *argv[]) {
   bool turnoP2 = false;
   while(jugar){
     while(turnoP1){ //turno de jugador 1
-
+      
     }
     while(turnop2){ //turno de jugador 2
 

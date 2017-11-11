@@ -20,7 +20,7 @@ int main(int argc, char const *argv[]) {
 
   int px;
   int py;
-
+  char pos;
   string p1;
   string p2;
   pieza*** tablero = CreateTab();
@@ -39,7 +39,6 @@ int main(int argc, char const *argv[]) {
         cin>>px;
         cout<<"Ingrese posicion de pieza Y";
         cin>>py;
-
         cout<<"--------------------------------------"<<endl;
 
         while ((px>0&&px<7)||(py>0&&py<7)) {

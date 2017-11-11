@@ -30,19 +30,32 @@ void marine::setType(char tipo){
   type = tipo;
 }
 
-bool marine::move(int x, int y, pieza*** tablero){
-  bool moverse = false;
-
-  for (int i = 0; i < 8; i++) {
-    for (int j = 0; j < 8; j++) {
-      if (true) {
-        /* code */
+bool marine::move(int x, int y, pieza*** tablero, int moverx, int movery){
+bool moverse = true;
+  if (x==moverx) {
+    if (y<movery) {
+      for (int i = y; i <= movery; i++) {
+          if (dynamic_cast<marine*>(tablero[x][i])) {
+            moverse = false;
+          }
+        }
+      }else{
+        for (int i = movery; i >= y; i++) {
+            if (dynamic_cast<marine*>(tablero[x][i])) {
+              return false;
+            }
+          }
       }
+
     }
+    return moverse;
   }
-  return moverse;
+
 }
 
+bool marine::eat(int x, int y, pieza*** tablero, int moverx, int movery){
+ return false;
+}
 marine::~marine(){
 
 }

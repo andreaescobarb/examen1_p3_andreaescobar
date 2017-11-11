@@ -30,8 +30,11 @@ void general::setType(char tipo){
   type = tipo;
 }
 
-bool general::move(int x, int y, pieza*** tablero){
-
+bool general::move(int x, int y, pieza*** tablero, int moverx,int movery){
+  return false;
+}
+bool general::eat(int x, int y, pieza*** tablero, int moverx, int movery){
+  return false;
 }
 
 general::~general(){

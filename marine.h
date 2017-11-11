@@ -19,7 +19,8 @@
       void setPosx(int);
       void setPosy(int);
 
-      bool move(int, int, pieza***);
+      bool move(int, int, pieza***, int, int);
+      bool eat(int, int, pieza***, int, int);
       ~marine();
  };
 

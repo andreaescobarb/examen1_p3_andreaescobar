@@ -43,11 +43,12 @@ int main(int argc, char const *argv[]) {
         cout<<"--------------------------------------"<<endl;
 
         while ((px>0&&px<7)||(py>0&&py<7)) {
-          cout<<"Posicion inexistente, intente de nuevo"
+          cout<<"Posicion inexistente, intente de nuevo";
           cout<<"Ingrese posicion de pieza X";
           cin>>px;
           cout<<"Ingrese posicion de pieza Y";
           cin>>py;
+
         }
 
 
